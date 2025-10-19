@@ -2,7 +2,7 @@ import qrcode
 
 # CAMBIA ESTO por tu URL de GitHub Pages cuando la tengas
 # Ejemplo: "https://tuusuario.github.io/menu-restaurante"
-data = "https://tuusuario.github.io/menu-restaurante"
+data = "https://leonardohuelvas.github.io/menu-restaurante"
 
 print("=" * 60)
 print("🎯 GENERADOR DE QR PARA MENÚ PROFESIONAL")
