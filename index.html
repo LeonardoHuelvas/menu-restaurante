@@ -73,7 +73,7 @@
             background: white;
         }
         
-        .pdf-container iframe {
+        iframe {
             width: 100%;
             height: 100%;
             border: none;
@@ -179,14 +179,15 @@
             <p>Descubre nuestras deliciosas opciones</p>
         </div>
 
-        <div class="pdf-container" id="pdf-viewer">
+        <div class="pdf-container">
             <div class="loading" id="loading">
                 <div class="spinner"></div>
                 <p>Cargando menú...</p>
             </div>
 
-            <!-- PDF embebido directamente desde GitHub Pages -->
-            <embed src="https://leonardohuelvas.github.io/menu-restaurante/menu.pdf#toolbar=0" type="application/pdf" width="100%" height="100%" onload="document.getElementById('loading').style.display='none'">
+            <!-- 👇 USAR VISOR DE GOOGLE + VERSIÓN DINÁMICA PARA EVITAR CACHÉ -->
+            <iframe src="https://docs.google.com/gview?embedded=true&url=https://leonardohuelvas.github.io/menu-restaurante/menu.pdf?v=2" onload="document.getElementById('loading').style.display='none'" title="Menú PDF">
+            </iframe>
         </div>
 
         <div class="buttons">
